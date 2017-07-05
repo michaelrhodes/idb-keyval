@@ -1,15 +1,12 @@
 {
-  "name": "idb-keyval",
-  "version": "2.3.0",
-  "description": "A super-simple-small keyval store built on top of IndexedDB",
-  "main": "idb-keyval.js",
-  "typings": "typings.d.ts",
-  "scripts": {
-    "build": "uglifyjs idb-keyval.js --screw-ie8 -mc --output dist/idb-keyval-min.js"
-  },
+  "name": "idb-kvs",
+  "version": "1.0.0",
+  "description": "Essentially an async localStorage, backed by IndexedDB",
+  "main": "index.js",
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jakearchibald/idb-keyval.git"
+    "url": "git+https://github.com/michaelrhodes/idb-kvs.git"
   },
   "keywords": [
     "idb",
@@ -17,16 +14,12 @@
     "store",
     "keyval",
     "localstorage",
-    "storage",
-    "promise"
+    "storage"
   ],
-  "author": "Jake Archibald",
+  "author": ["Jake Archibald", "Michael Rhodes"],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/jakearchibald/idb-keyval/issues"
+    "url": "https://github.com/michaelrhodes/idbkvs/issues"
   },
-  "homepage": "https://github.com/jakearchibald/idb-keyval#readme",
-  "devDependencies": {
-    "uglify-js": "^2.7.0"
-  }
+  "homepage": "https://github.com/michaelrhodes/idbkvs#readme"
 }

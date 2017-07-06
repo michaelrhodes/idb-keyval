@@ -50,15 +50,15 @@ function keys (cb) {
 }
 
 function withStore (type, cb) {
-  getDB(function (err, db) {
+  getDB(then(function (db) {
     var transaction = db.transaction('kv', type)
     transaction.onerror = cb
     cb(null, transaction.objectStore('kv'))
-  })
+  }, cb))
 }
 
 function getDB (cb) {
-  if (db) return setTimeout(cb, 0, null, db)
+  if (db) return cb(null, db)
   var open = indexedDB.open('kvs', 1)
   open.onerror = cb
   open.onupgradeneeded = function () {

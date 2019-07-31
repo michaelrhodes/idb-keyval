@@ -1,25 +1,11 @@
 {
   "name": "idb-kvs",
-  "version": "1.0.0",
-  "description": "Essentially an async localStorage, backed by IndexedDB",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/michaelrhodes/idb-kvs.git"
-  },
-  "keywords": [
-    "idb",
-    "indexeddb",
-    "store",
-    "keyval",
-    "localstorage",
-    "storage"
-  ],
   "author": ["Jake Archibald", "Michael Rhodes"],
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Essentially an async localStorage, backed by IndexedDB",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/michaelrhodes/idbkvs/issues"
-  },
-  "homepage": "https://github.com/michaelrhodes/idbkvs#readme"
+  "devDependencies": {
+    "dexy": "github:michaelrhodes/dexy"
+  }
 }

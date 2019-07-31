@@ -1,7 +1,7 @@
 {
   "name": "idb-kvs",
   "author": ["Jake Archibald", "Michael Rhodes"],
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "description": "Essentially an async localStorage, backed by IndexedDB",
   "license": "Apache-2.0",
